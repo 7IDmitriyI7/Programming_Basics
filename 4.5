@@ -1,0 +1,32 @@
+using System;
+
+namespace _4._5
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Введите число а");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите число b");
+            double b = Convert.ToDouble(Console.ReadLine());
+            if (a == 0 || b == 0)
+            {
+                Console.WriteLine("Не вводи 0");
+            }
+
+            else if (a != 0 || b != 0)
+            {
+                double Sum = (Math.Abs(a) + Math.Abs(b));
+                double Raz = (Math.Abs(a) - Math.Abs(b));
+                double Pr = (Math.Abs(a) * Math.Abs(b));
+                double Prk = (Math.Abs(a) * Math.Abs(b));
+
+                Console.WriteLine("Сумма = " + Sum);
+                Console.WriteLine("Разность = " + Raz);
+                Console.WriteLine("Произведение = " + Pr);
+                Console.WriteLine("Частное = " + Prk);
+            }
+        }
+    }
+}
