@@ -1,0 +1,32 @@
+using System;
+
+namespace _4._4
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Введите число а");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите число b");
+            double b = Convert.ToDouble(Console.ReadLine());
+            if(a==0 || b == 0)
+            {
+                Console.WriteLine("Не вводи 0");
+            }
+          
+            else if (a != 0 || b != 0)
+            {
+                double Sum = (a * a + b * b);
+                double Raz = (a * a - b * b);
+                double Pr = (a * a * b * b);
+                double Prk = (a * a / b * b);
+
+                Console.WriteLine("Сумма квадратов= " + Sum);
+                Console.WriteLine("Разность квадратов= " + Raz);
+                Console.WriteLine("Произведение квадратов= " + Pr);
+                Console.WriteLine("Частное квадратов= " + Prk);
+            }
+        }
+    }
+}
